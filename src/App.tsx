@@ -1,7 +1,14 @@
+import { Navbar } from "./components/Navbar"
+
 function App() {
   return (
     <div className="min-h-[100dvh] bg-bg text-text">
-      <h1 className="text-4xl font-bold p-8">Portfolio</h1>
+      <Navbar />
+      <main className="pt-16">
+        <section id="hero" className="h-[100dvh]">Hero</section>
+        <section id="projects">Projects</section>
+        <section id="contact">Contact</section>
+      </main>
     </div>
   )
 }
