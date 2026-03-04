@@ -17,7 +17,7 @@ export const projects: Project[] = [
     date: "Mar 2026",
     liveUrl: "https://stackdown.jrga.workers.dev/",
     githubUrl: "https://github.com/jrga03/stackdown",
-    image: "/projects/stackdown.png",
+    image: "/projects/stackdown.webp",
   },
   {
     title: "Wedding Dashboard",
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     date: "Feb 2026",
     liveUrl: "https://wedding-dashboard-2027.vercel.app/",
     githubUrl: "https://github.com/jrga03/wedding-dashboard",
-    image: "/projects/wedding-dashboard.png",
+    image: "/projects/wedding-dashboard.webp",
   },
   {
     title: "Household Hub",
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     date: "Feb 2026",
     liveUrl: "https://household-hub.jrga.workers.dev",
     githubUrl: "https://github.com/jrga03/household-hub",
-    image: "/projects/household-hub.png",
+    image: "/projects/household-hub.webp",
   },
   {
     title: "Meal Planner",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     date: "Feb 2023",
     liveUrl: "https://meal-planner-3771.vercel.app",
     githubUrl: "https://github.com/jrga03/meal-planner",
-    image: "/projects/meal-planner.png",
+    image: "/projects/meal-planner.webp",
   },
   {
     title: "Cert Generator",
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     date: "Sep 2023",
     liveUrl: "https://cert-generator-two.vercel.app",
     githubUrl: "https://github.com/jrga03/cert-generator",
-    image: "/projects/cert-generator.png",
+    image: "/projects/cert-generator.webp",
   },
   {
     title: "VA Grants Map",
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     date: "Sep 2025",
     liveUrl: "https://va-ph-grants-map.netlify.app/",
     githubUrl: "https://github.com/jrga03/va-ph-grants-map",
-    image: "/projects/va-grants-map.png",
+    image: "/projects/va-grants-map.webp",
   },
   {
     title: "Recipe Extractor",
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     date: "Feb 2022",
     liveUrl: "https://recipe-extractor-eta.vercel.app",
     githubUrl: "https://github.com/jrga03/recipe-extractor",
-    image: "/projects/recipe-extractor.png",
+    image: "/projects/recipe-extractor.webp",
   },
   {
     title: "Report Table Maker",
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     date: "Jul 2023",
     liveUrl: "https://fb-report-table-maker.netlify.app/",
     githubUrl: "https://github.com/jrga03/fb-report-table-maker",
-    image: "/projects/report-table-maker.png",
+    image: "/projects/report-table-maker.webp",
   },
   {
     title: "QR Code Generator",
@@ -95,7 +95,7 @@ export const projects: Project[] = [
     date: "Jul 2024",
     liveUrl: "https://jrga03-qrcode-generator.netlify.app/",
     githubUrl: "https://github.com/jrga03/qrcode-generator",
-    image: "/projects/qr-code-generator.png",
+    image: "/projects/qr-code-generator.webp",
   },
   {
     title: "Poker Chip Count",
@@ -104,7 +104,7 @@ export const projects: Project[] = [
     date: "Jun 2023",
     liveUrl: "https://poker-chip-count.netlify.app/",
     githubUrl: "https://github.com/jrga03/poker-chip-count",
-    image: "/projects/poker-chip-count.png",
+    image: "/projects/poker-chip-count.webp",
   },
   {
     title: "Markdown Previewer",
@@ -113,7 +113,7 @@ export const projects: Project[] = [
     date: "Jun 2019",
     liveUrl: "https://jrga03.github.io/markdown-previewer/",
     githubUrl: "https://github.com/jrga03/markdown-previewer",
-    image: "/projects/markdown-previewer.png",
+    image: "/projects/markdown-previewer.webp",
   },
   {
     title: "JavaScript Calculator",
@@ -122,7 +122,7 @@ export const projects: Project[] = [
     date: "Feb 2018",
     liveUrl: "https://jrga03.github.io/javascript-calcu/",
     githubUrl: "https://github.com/jrga03/javascript-calcu",
-    image: "/projects/javascript-calculator.png",
+    image: "/projects/javascript-calculator.webp",
   },
   {
     title: "Pomodoro Clock",
@@ -131,6 +131,6 @@ export const projects: Project[] = [
     date: "Nov 2017",
     liveUrl: "https://jrga03.github.io/pomodoro-clock/",
     githubUrl: "https://github.com/jrga03/pomodoro-clock",
-    image: "/projects/pomodoro-clock.png",
+    image: "/projects/pomodoro-clock.webp",
   },
 ]
