@@ -10,6 +10,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Stackdown",
+    description:
+      "Browser-based block-stacking game with Marathon and Practice modes. Pure TypeScript engine with Canvas 2D rendering.",
+    tech: ["React", "TypeScript", "Vite", "Canvas API"],
+    date: "Mar 2026",
+    liveUrl: "https://stackdown.jrga.workers.dev/",
+    githubUrl: "https://github.com/jrga03/stackdown",
+    image: "/projects/placeholder.svg",
+  },
+  {
     title: "Wedding Dashboard",
     description:
       "Wedding planning dashboard with RSVP, vendors, budget, and seating management. PWA with realtime collaboration.",
@@ -25,7 +35,7 @@ export const projects: Project[] = [
       "Offline-first household finance app with event sourcing and multi-device sync.",
     tech: ["React", "TypeScript", "Supabase", "Dexie.js"],
     date: "Feb 2026",
-    liveUrl: "",
+    liveUrl: "https://household-hub.jrga.workers.dev",
     githubUrl: "https://github.com/jrga03/household-hub",
     image: "/projects/placeholder.svg",
   },
