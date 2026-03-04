@@ -1,50 +1,61 @@
-# React + TypeScript + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal developer portfolio built with React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Vite 7** — build tool and dev server
+- **React 18** — UI framework
+- **TypeScript** — type safety
+- **Tailwind CSS v4** — utility-first styling
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js 22+
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Install and run
+
+```sh
+npm install
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Build for production
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```sh
+npm run build
 ```
+
+Output goes to `dist/`.
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Contact.tsx      # Contact section
+│   ├── Footer.tsx       # Site footer
+│   ├── Hero.tsx         # Hero/intro section
+│   ├── Navbar.tsx       # Navigation bar
+│   ├── ProjectCard.tsx  # Individual project card
+│   └── Projects.tsx     # Projects grid section
+├── data/
+│   └── projects.ts      # Project entries
+├── App.tsx              # Root component
+├── index.css            # Global styles
+└── main.tsx             # Entry point
+```
+
+## Customization
+
+- **Projects** — edit `src/data/projects.ts` to add, remove, or update portfolio entries.
+- **Contact info** — update links and details in `src/components/Contact.tsx`.
+
+## Deployment
+
+Configured for **Cloudflare Pages**:
+
+- Build command: `npm run build`
+- Output directory: `dist`

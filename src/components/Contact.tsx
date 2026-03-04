@@ -1,6 +1,6 @@
 const socials = [
-  { label: "GitHub", url: "https://github.com/jasonacido" },
-  { label: "LinkedIn", url: "https://linkedin.com/in/jasonacido" },
+  { label: "GitHub", url: "https://github.com/jrga03" },
+  { label: "LinkedIn", url: "https://linkedin.com/in/jacido03" },
 ]
 
 export function Contact() {
@@ -12,10 +12,10 @@ export function Contact() {
           Have a project in mind or just want to say hi?
         </p>
         <a
-          href="mailto:hello@jasonacido.com"
+          href="mailto:jasonacido@gmail.com"
           className="inline-block px-6 py-3 bg-accent hover:bg-accent-hover text-white rounded-lg transition-colors font-medium mb-8"
         >
-          hello@jasonacido.com
+          jasonacido@gmail.com
         </a>
         <div className="flex justify-center gap-6">
           {socials.map((s) => (
