@@ -23,15 +23,18 @@ export function ProjectCard({ project }: { project: Project }) {
             </span>
           ))}
         </div>
+        <p className="text-xs text-text-muted mb-4">{project.date}</p>
         <div className="flex gap-4 text-sm">
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-accent hover:text-accent-hover transition-colors"
-          >
-            Live Demo &rarr;
-          </a>
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:text-accent-hover transition-colors"
+            >
+              Live Demo &rarr;
+            </a>
+          )}
           <a
             href={project.githubUrl}
             target="_blank"
