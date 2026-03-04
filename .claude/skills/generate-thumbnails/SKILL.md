@@ -7,7 +7,7 @@ description: Generate screenshot thumbnails for portfolio project cards. Use thi
 
 ## Overview
 
-This skill captures live screenshots of portfolio project URLs and saves them as PNG thumbnails used in the project cards. It reads project data from `src/data/projects.ts` and outputs images to `public/projects/`.
+This skill captures live screenshots of portfolio project URLs and saves them as WebP thumbnails used in the project cards. It reads project data from `src/data/projects.ts` and outputs images to `public/projects/`.
 
 ## Prerequisites
 
@@ -54,11 +54,11 @@ node .claude/skills/generate-thumbnails/scripts/screenshot.mjs --url https://exa
 ### Refreshing all thumbnails
 
 1. Run: `node .claude/skills/generate-thumbnails/scripts/screenshot.mjs`
-2. Verify the generated PNGs in `public/projects/`
+2. Verify the generated WebP files in `public/projects/`
 
 ### Adding a new project
 
-1. Add the project entry to `src/data/projects.ts` with the `image` field set to `/projects/<slug>.png`
+1. Add the project entry to `src/data/projects.ts` with the `image` field set to `/projects/<slug>.webp`
 2. Run: `node .claude/skills/generate-thumbnails/scripts/screenshot.mjs --slug <slug>`
 
 ### Updating a single thumbnail
@@ -68,7 +68,7 @@ node .claude/skills/generate-thumbnails/scripts/screenshot.mjs --url https://exa
 
 ## How It Works
 
-The script parses `src/data/projects.ts` to extract project titles, live URLs, and image slugs. It launches a headless Chromium browser via Puppeteer, navigates to each URL, waits for the page to fully render (networkidle2 + configurable delay), and saves a viewport screenshot as a PNG to `public/projects/`.
+The script parses `src/data/projects.ts` to extract project titles, live URLs, and image slugs. It launches a headless Chromium browser via Puppeteer, navigates to each URL, waits for the page to fully render (networkidle2 + configurable delay), and saves a viewport screenshot as a WebP to `public/projects/`.
 
 ## Resources
 

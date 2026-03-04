@@ -10,7 +10,7 @@
  *
  * Requirements: puppeteer must be installed (npm install --no-save puppeteer)
  *
- * Output: PNG files at <project-root>/public/projects/<slug>.png (1200x800 viewport)
+ * Output: WebP files at <project-root>/public/projects/<slug>.webp (1200x800 viewport)
  */
 
 import puppeteer from "puppeteer";
@@ -101,12 +101,12 @@ await page.setViewport({
 let failed = 0;
 
 for (const { title, slug, url } of targets) {
-  const outPath = join(outDir, `${slug}.png`);
+  const outPath = join(outDir, `${slug}.webp`);
   console.log(`Capturing "${title}" (${slug}) from ${url} ...`);
   try {
     await page.goto(url, { waitUntil: "networkidle2", timeout: 30000 });
     await new Promise((r) => setTimeout(r, argWait));
-    await page.screenshot({ path: outPath, type: "png" });
+    await page.screenshot({ path: outPath, type: "webp", quality: 80 });
     console.log(`  -> ${outPath}`);
   } catch (err) {
     console.error(`  !! Failed: ${err.message}`);
