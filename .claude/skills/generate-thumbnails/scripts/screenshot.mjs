@@ -39,7 +39,7 @@ function parseProjects() {
     const title = match[1];
     const liveUrl = match[2];
     const image = match[3];
-    // Derive slug from image path: /projects/foo.png -> foo
+    // Derive slug from image path: /projects/foo.webp -> foo
     const slug = image.replace(/^\/projects\//, "").replace(/\.\w+$/, "");
     projects.push({ title, slug, url: liveUrl });
   }
