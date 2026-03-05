@@ -104,4 +104,7 @@ html {
   .blob-1, .blob-2, .blob-3 {
     animation: none;
   }
+  .animate-fade-in {
+    animation: none;
+  }
 }
