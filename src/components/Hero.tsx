@@ -8,9 +8,14 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-[100dvh] flex items-center justify-center px-6"
+      className="relative min-h-[100dvh] flex items-center justify-center px-6 overflow-hidden"
     >
-      <div className="max-w-2xl text-center animate-fade-in">
+      <div className="gradient-backdrop" aria-hidden="true">
+        <div className="blob blob-1" />
+        <div className="blob blob-2" />
+        <div className="blob blob-3" />
+      </div>
+      <div className="relative z-10 max-w-2xl text-center animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
           Jason Acido
         </h1>
