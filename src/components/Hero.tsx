@@ -37,6 +37,7 @@ export function Hero() {
             className="px-6 py-3 border border-border hover:border-text-muted rounded-lg transition-colors font-medium text-text-muted hover:text-text"
           >
             GitHub
+            <span className="sr-only">(opens in new tab)</span>
           </a>
         </div>
       </div>
