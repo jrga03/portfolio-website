@@ -2,12 +2,15 @@ import type { Project } from "../data/projects"
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="bg-surface border border-border rounded-xl overflow-hidden hover:border-text-muted hover:-translate-y-1 transition-all duration-300">
+    <div className="bg-surface border border-border rounded-xl overflow-hidden hover:border-text-muted hover:-translate-y-1 transition-[transform,border-color] duration-300">
       <img
         src={project.image}
         alt={project.title}
         loading="lazy"
-        className="w-full h-48 object-cover"
+        width={1200}
+        height={800}
+        decoding="async"
+        className="w-full aspect-[3/2] object-cover"
       />
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
@@ -33,7 +36,8 @@ export function ProjectCard({ project }: { project: Project }) {
               rel="noopener noreferrer"
               className="text-accent hover:text-accent-hover transition-colors"
             >
-              Live Demo &rarr;
+              Live Demo <span aria-hidden="true">&rarr;</span>
+              <span className="sr-only">(opens in new tab)</span>
             </a>
           )}
           <a
@@ -43,6 +47,7 @@ export function ProjectCard({ project }: { project: Project }) {
             className="text-text-muted hover:text-text transition-colors"
           >
             GitHub
+            <span className="sr-only">(opens in new tab)</span>
           </a>
         </div>
       </div>
