@@ -5,7 +5,7 @@ const socials = [
 
 export function Contact() {
   return (
-    <section id="contact" className="py-24 px-6">
+    <section id="contact" className="py-24 px-6" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 300px" }}>
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in touch</h2>
         <p className="text-text-muted mb-8">
@@ -27,6 +27,7 @@ export function Contact() {
               className="text-text-muted hover:text-text transition-colors"
             >
               {s.label}
+              <span className="sr-only">(opens in new tab)</span>
             </a>
           ))}
         </div>
