@@ -10,16 +10,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Stackdown",
-    description:
-      "Browser-based block-stacking game with Marathon and Practice modes. Pure TypeScript engine with Canvas 2D rendering.",
-    tech: ["React", "TypeScript", "Vite", "Canvas API"],
-    date: "Mar 2026",
-    liveUrl: "https://stackdown.jrga.workers.dev/",
-    githubUrl: "https://github.com/jrga03/stackdown",
-    image: "/projects/stackdown.webp",
-  },
-  {
     title: "Wedding Dashboard",
     description:
       "Wedding planning dashboard with RSVP, vendors, budget, and seating management. PWA with realtime collaboration.",
@@ -40,6 +30,36 @@ export const projects: Project[] = [
     image: "/projects/household-hub.webp",
   },
   {
+    title: "Tally",
+    description:
+      "Mobile-first expense splitting PWA. Create groups, split expenses, track balances, and share via compressed URLs — no backend needed.",
+    tech: ["React", "TypeScript", "Mantine", "Vite"],
+    date: "Mar 2026",
+    liveUrl: "https://tally.jrga.workers.dev/",
+    githubUrl: "https://github.com/jrga03/tally",
+    image: "/projects/tally.webp",
+  },
+  {
+    title: "Stackdown",
+    description:
+      "Browser-based block-stacking game with Marathon and Practice modes. Pure TypeScript engine with Canvas 2D rendering.",
+    tech: ["React", "TypeScript", "Vite", "Canvas API"],
+    date: "Mar 2026",
+    liveUrl: "https://stackdown.jrga.workers.dev/",
+    githubUrl: "https://github.com/jrga03/stackdown",
+    image: "/projects/stackdown.webp",
+  },
+  {
+    title: "Pickle",
+    description:
+      "Mobile-first PWA for managing pickleball open play sessions — handle matchups, track rounds, and split court expenses.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    date: "Mar 2026",
+    liveUrl: "https://pickle.jrga.workers.dev/",
+    githubUrl: "https://github.com/jrga03/pickle",
+    image: "/projects/pickle.webp",
+  },
+  {
     title: "Meal Planner",
     description:
       "Full-stack meal planning app with authentication, recipe scraping, and PWA support.",
@@ -50,16 +70,6 @@ export const projects: Project[] = [
     image: "/projects/meal-planner.webp",
   },
   {
-    title: "Cert Generator",
-    description:
-      "Batch certificate generator from CSV and template image to PDF/PNG.",
-    tech: ["Next.js", "PDFKit", "PapaParse"],
-    date: "Sep 2023",
-    liveUrl: "https://cert-generator-two.vercel.app",
-    githubUrl: "https://github.com/jrga03/cert-generator",
-    image: "/projects/cert-generator.webp",
-  },
-  {
     title: "VA Grants Map",
     description:
       "Interactive SVG map of the Philippines showing grant partnership coverage.",
@@ -68,6 +78,16 @@ export const projects: Project[] = [
     liveUrl: "https://va-ph-grants-map.netlify.app/",
     githubUrl: "https://github.com/jrga03/va-ph-grants-map",
     image: "/projects/va-grants-map.webp",
+  },
+  {
+    title: "Cert Generator",
+    description:
+      "Batch certificate generator from CSV and template image to PDF/PNG.",
+    tech: ["Next.js", "PDFKit", "PapaParse"],
+    date: "Sep 2023",
+    liveUrl: "https://cert-generator-two.vercel.app",
+    githubUrl: "https://github.com/jrga03/cert-generator",
+    image: "/projects/cert-generator.webp",
   },
   {
     title: "Recipe Extractor",
