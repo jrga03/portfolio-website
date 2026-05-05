@@ -6,6 +6,7 @@ export interface Project {
   liveUrl: string
   githubUrl: string
   image: string
+  private?: boolean
 }
 
 export const projects: Project[] = [
@@ -18,6 +19,7 @@ export const projects: Project[] = [
     liveUrl: "https://wedding-dashboard-2027.vercel.app/",
     githubUrl: "https://github.com/jrga03/wedding-dashboard",
     image: "/projects/wedding-dashboard.webp",
+    private: true,
   },
   {
     title: "Household Hub",
@@ -28,6 +30,7 @@ export const projects: Project[] = [
     liveUrl: "https://household-hub.jrga.workers.dev",
     githubUrl: "https://github.com/jrga03/household-hub",
     image: "/projects/household-hub.webp",
+    private: true,
   },
   {
     title: "Tally",

@@ -29,7 +29,7 @@ export function ProjectCard({ project }: { project: Project }) {
         </div>
         <p className="text-xs text-text-muted mb-4">{project.date}</p>
         <div className="flex gap-4 text-sm">
-          {project.liveUrl && (
+          {project.liveUrl && !project.private && (
             <a
               href={project.liveUrl}
               target="_blank"
